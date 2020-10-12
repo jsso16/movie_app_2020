@@ -10,7 +10,7 @@ React JS Fundamentals Course 2020
 4. .isRequired는 '필요하다'라는 뜻으로 props가 필수가 아니라면 붙이지 않아도 된다.
 5. 컴포넌트의 값이 숫자형일 경우 number를, 자료형일 경우에는 String을 사용하면 된다.
 6. props는 동적 데이터를 다루지 못한다.
-> state로 숫자 증감 기능 만들어보기
+> state로 숫자 증감 기능 만들어보기 <br>
 > 숫자 증감 기능을 제대로 만들어보기 - setState() 함수 사용하기
 - state 특징
 1. state는 동적 데이터를 사용한다.

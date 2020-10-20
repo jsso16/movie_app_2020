@@ -2,6 +2,31 @@
 ## movie_app_2020
 React JS Fundamentals Course 2020 
 
+## 10월 16일
+> 클래스형 컴포넌트의 일생 알아보기
+1. constructor() 함수
+→ constructor 실행 후 render 실행
+2. componentDidMount() 함수
+→ render 실행 후 componentDidMount 실행
+3. componentDidUpdate() 함수
+→ 화면이 새로 그려지게 되면 실행
+4. componentDidUnmount() 함수
+> App 컴포넌트 비우기(영화 앱 만들기 워밍업) <br>
+> 데이터 로딩 상태 표시해주기
+- isLoading state 특징
+1. 앱이 실행(mount)되는 초기에는 무조건 로딩 상태이기 때문에 값은 true이다.
+2. 삼항연산자로 로딩 상태를 알려주는 문장을 만들 수 있다.
+3. 강제로 false로 바꿔서 로딩 현상을 구현할 수 있다.
+> 영화 API 사용해보기
+- API 특징
+1. 특정 주소를 입력하면 그 주소에 맞는 결과를 보내준다.
+2. 조건도 붙일 수 있도록 제공한다.
+3. API를 사용하려면 axios를 설치 후 import하여야 한다.
+4. 이때, componentDidUnmount() 함수에서 axios.get() 함수의 인자에 URL을 전달하여 API를 호출한다.
+- async, await
+1. 자바스크립트에서 시간이 필요하다는 것을 알리기 위해서 사용되는 키워드이다.
+2. 시간이 필요하다는 것을 알리려면 async를 () 앞에 붙이고, 실제 시간이 필요한 대상인 axios.get() 함수에는 await를 붙인다.
+
 ## 10월 07일
 > 앱에 prop-types 도입하기 - 음식 데이터에 rating 추가하기
 1. prop-type을 사용하기 위해서는 prop-types를 설치해야 한다.

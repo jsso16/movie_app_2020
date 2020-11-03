@@ -14,7 +14,7 @@ React JS Fundamentals Course 2020
 3. propTypes를 작성하려면 Number는 PropType.number.isRequired로, String은 PropType.string.isRequired로 작성한다.
 4. json 파일로 이루어진 평점을 기준으로 내림차순으로 영화 데이터를 정렬해 보여주는 기능은 axios.get()을 이용하면 된다.
 5. 컴포넌트를 그리기 위해서는 map() 함수를 사용한 다음, return을 이용하여 컴포넌트의 값을 반환해준다. <br>
-→ 이때 Movie 컴포넌트를 반드시 import 해주어야 하며, <Movie />를 이용해 함수를 반환하도록 해주어야 함
+→ 이때 Movie 컴포넌트를 반드시 import 해주어야 하며, 컴포넌트를 이용해 함수를 반환하도록 해주어야 함
 6. isRequired로 설정한 props는 무조건 모두 전달해주어야 한다.
 7. key props는 유일해야 함으로 API에서 넘겨주는 id값을 사용한다.
 

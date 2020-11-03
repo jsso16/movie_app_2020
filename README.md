@@ -2,6 +2,23 @@
 ## movie_app_2020
 React JS Fundamentals Course 2020 
 
+## 10월 30일
+> 영화 데이터 화면에 그리기
+1. 객체에 있는 키에 조금 더 효율적으로 접근하기 위해서는 구조 분해 할당을 사용한다.
+2. setState를 사용하면 데이터를 저장할 수 있다.
+3. ES6에서는 객체의 키와 대입할 변수의 이름이 같다면 코드를 축약할 수 있다.
+4. isLoading state의 값을 true에서 false로 업데이트하면 실행화면을 변하게 할 수 있다.
+> Movie 컴포넌트 만들기
+1. state가 필요하지 않은 컴포넌트는 함수형 컴포넌트로 작성한다.
+2. 컴포넌트에서 넘어와야 하는 영화 데이터를 정의하고, 관리하기 위해서는 prop-types를 사용한다.
+3. propTypes를 작성하려면 Number는 PropType.number.isRequired로, String은 PropType.string.isRequired로 작성한다.
+4. json 파일로 이루어진 평점을 기준으로 내림차순으로 영화 데이터를 정렬해 보여주는 기능은 axios.get()을 이용하면 된다.
+5. 컴포넌트를 그리기 위해서는 map() 함수를 사용한 다음, return을 이용하여 컴포넌트의 값을 반환해준다. <br>
+→ 이때 Movie 컴포넌트를 반드시 import 해주어야 하며, <Movie />를 이용해 함수를 반환하도록 해주어야 함
+6. isRequired로 설정한 props는 무조건 모두 전달해주어야 한다.
+7. key props는 유일해야 함으로 API에서 넘겨주는 id값을 사용한다.
+
+
 ## 10월 16일
 > 클래스형 컴포넌트의 일생 알아보기
 1. constructor() 함수

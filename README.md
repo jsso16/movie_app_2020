@@ -4,23 +4,23 @@ React JS Fundamentals Course 2020
 
 ## 11월 06일
 > 영화 앱 스타일링하기
-1. App 컴포넌트와 Movie 컴포넌트에 HTML 추가하기
+1. App 컴포넌트와 Movie 컴포넌트에 HTML 추가하기 <br>
 → App 컴포넌트 : 컴포넌트가 반환할 JSX 바깥쪽을 section으로 감싼다. <br>
 → Movie 컴포넌트 : 컴포넌트가 반환할 JSX를 div로 감싼다.
-2. 영화 포스터 이미지 추가하기
+2. 영화 포스터 이미지 추가하기 <br>
 → 전체 태그에 div 태그를 추가한 후, img 태그를 그 아래 추가하여 src 속성과 alt 속성에 각각 props를 전달한다.
 3. Movie 컴포넌트 정리하기 - id props 지우기
 4. App.css / Movie.css 파일을 생성한 후 컴포넌트에 각각 import하기
 > 영화 앱 전체 모습 수정하기
 1. Movie 컴포넌트에 genres props 넘겨주기
-2. App 컴포넌트 / Movie 컴포넌트 수정하기
+2. App 컴포넌트 / Movie 컴포넌트 수정하기 <br>
 → Movie 컴포넌트에서 genres의 props와 prop-type을 추가한 후, App 컴포넌트에서 undefined로 넘어온 부분을 수정한다.
-3. class 속성 이름을 className으로 바꿔주기
-※ 이름을 바꿔주어야 하는 이유는?
+3. class 속성 이름을 className으로 바꿔주기 <br>
+※ 이름을 바꿔주어야 하는 이유는? <br>
 HTML의 class와 자바스크립트의 class라는 이름이 겹치면 React가 혼란스러울 수 있기 때문이다. <br>
 이와 유사한 예를 하나 더 이야기한다면 label문의 for element가 있다.
 4. 영화 장르 출력하기 - map() 함수 사용
-5. key props 추가하기
+5. key props 추가하기 <br>
 → key값으로 사용하기에 적당한 id값이 없다면 새롭게 만들어내야 하는데, map() 함수에 2번째 매개변수를 지정할 경우 배열의 index값을 반환해주는 기능이 있다. 따라서 이 기능을 이용하여 배열의 인덱스를 key props로 활용할 수 있다.
 
 ## 10월 30일

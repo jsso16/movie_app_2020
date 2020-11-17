@@ -2,6 +2,30 @@
 ## movie_app_2020
 React JS Fundamentals Course 2020 
 
+## 11월 13일
+> 영화 앱 이어서 스타일링하기
+- App.css, Movie.css 수정하기
+- slice 함수를 이용하여 시놉시스 180자로 제한하기
+- 영화 앱 제목 바꾸기
+> react-router-dom 설치 및 폴더 정리하기 <br>
+> 라우터 만들어보기
+- router 특징
+1. 사용자가 입력한 URL을 통해 특정 컴포넌트를 불러주는 역할을 한다.
+2. React-router-dom은 여러 종류의 라우터를 제공한다. → 여기서는 HashRouter와 Route 컴포넌트만 사용함
+3. 필요한 router의 컴포넌트는 import하여 사용할 수 있다.
+4. Route는 props를 전달할 수 있다.
+5. path props는 URL을 위한 것이고, component props는 URL에 맞는 컴포넌트를 불러주기 위한 것이다.
+6. 서버에서 원하는 컴포넌트를 기본으로 보여주기 위해서는 path props를 "/"으로 입력하면 된다.
+7. 컴포넌트가 같은 props를 가질 때, 모두 출력되는 것을 방지하려면 exact props를 추가하면 된다. <br>
+→ exact props는 Route 컴포넌트가 path props와 정확하게 일치하는 URL에만 반응하도록 함
+> 네비게이션 만들어보기
+- Navigation 특징
+1. Navigation 역시 import해서 사용할 수 있다.
+2. HashRouter에서 불러오게 한다.
+3. a 태그 대신 React-router-dom의 Link 컴포넌트를 사용한다.
+4. href 속성은 to로 바꿔서 사용한다.
+5. Link, Router 컴포넌트는 반드시 HashRouter 안에 포함되어야 한다.
+
 ## 11월 06일
 > 영화 앱 스타일링하기
 1. App 컴포넌트와 Movie 컴포넌트에 HTML 추가하기 <br>

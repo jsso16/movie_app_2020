@@ -2,6 +2,35 @@
 ## movie_app_2020
 React JS Fundamentals Course 2020 
 
+## 11월 20일
+> Navigation.css 만들기 <br>
+> 영화 상세 정보 기능 만들어보기
+- route props 특징
+1. 라우팅 대상이 되는 컴포넌트에 넘겨주는 기본 props를 의미한다.
+2. react-router-dom에서 Route 컴포넌트가 그려준 컴포넌트에 전달한 props를 확인할 수 있다.
+3. Router 컴포넌트가 그려줄 컴포넌트에는 항상 이 props가 전달되며, 이 props는 원하는 데이터를 담아 보낼 수 있다.
+4. 데이터를 담아 보내려면 Link 컴포넌트의 to props의 구조를 조금 바꿔야 한다.
+5. pathname은 URL을 의미하며, state는 우리가 route props에 보내줄 데이터를 의미한다.
+- Movie 컴포넌트에 Link 컴포넌트 추가하기(클릭 시 영화 상세 정보 페이지 이동을 위해 추가)
+- Detail, Route 컴포넌트 만들기
+> 리다이렉트 기능 만들어보기
+- Redirect 기능 특징
+1. 리다이렉트 기능을 사용하기 위해서는 router props의 history 키를 활용해야 한다.
+2. history 키에는 push, go, goBack, goForward와 같은 키가 있으며, 그 키에는 URL으로 변경해주는 함수들이 있다.
+3. 컴포넌트를 함수형에서 클래스형으로 변경한 후 location, history 키를 구조 분해 할당해야 한다.
+4. location.state가 undefined인 경우 push() 함수를 사용하면 된다. → history.push("/")를 실행하도록 코드를 작성함
+5. push() 함수 사용 이후, render() 함수에도 componentDidMount() 생명주기 함수에도 리다이렉트 코드를 추가해야 한다.
+6. location.state가 없으면 render() 함수가 null을 반환하도록 수정해야 한다.
+- 상세페이지 구성하기
+> 영화 앱 깃허브에 배포하기
+1. package.json 파일에서 homepage 키 값을 browserlist 키 아래에 추가하기
+2. package.json에 script 키 값으로 predeploy, deploy 명령어 추가하기
+3. 최종 코드 github에 업로드하기
+4. gh-page 설치하기(github에서 제공하는 Github Pager 서비스를 사용)
+5. github 저장소의 이름 다시 확인하기
+6. 터미널에서 명령어로 github에 영화 앱 배포하기
+7. Github Pager에 접속하기(https://[github 계정].github.io/[저장소 이름])
+
 ## 11월 13일
 > 영화 앱 이어서 스타일링하기
 - App.css, Movie.css 수정하기
